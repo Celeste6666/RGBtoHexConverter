@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB to Hex Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Courgette:400&subset=latin-ext" rel="stylesheet"
+        type="text/css">
+    <style>
+        * {
+            font-family: 'Courgette', cursive, Arial, Helvetica, sans-serif;
+        }
+
+        .bg_red {
+            background-color: red;
+        }
+
+        .bg_blue {
+            background-color: blue;
+        }
+
+        .bg_green {
+            background-color: green;
+        }
+
+        .w-bgVal {
+            width: 40px;
+            height: 34px;
+        }
+
+        .hex {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .bg-color {
+            background-color: #000000;
+        }
+    </style>
+</head>
+
+<body class="bg-color">
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Celeste's Color Convert</span>
+    </nav>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5 text-center pt-3 bg-white rounded"
+        style="min-width: 260px;max-width: 300px;">
+        <div class="hex-convert">
+            <form class="form-inline h6 d-flex  align-items-center text-white">
+                <span class="bg_red mr-2 p-2 rounded">R</span>
+                <div class="form-group">
+                    <input type="range" class="custom-range " min="0" max="255" value="0">
+                </div>
+                <span class="bg_red ml-2 p-2 rounded bgHex w-bgVal">0</span>
+            </form>
+            <form class=" form-inline h6 d-flex align-items-center text-white">
+                <span class="bg_green mr-2 p-2 rounded">G</span>
+                <div class="form-group">
+                    <input type="range" class="custom-range" min="0" max="255" value="0">
+                </div>
+                <span class="bg_green ml-2 p-2 rounded bgHex w-bgVal">0</span>
+            </form>
+            <form class=" form-inline h6 d-flex align-items-center text-white">
+                <span class="bg_blue mr-2 p-2 rounded">B</span>
+                <div class="form-group">
+                    <input type="range" class="custom-range" min="0" max="255" value="0">
+                </div>
+                <span class="bg_blue ml-2 p-2 rounded bgHex w-bgVal">0</span>
+            </form>
+
+            <p class=" hex hex-value display-4 mt-3">#000000</p>
+        </div>
+    </div>
+    <script src="RGB to Hex Converter.js"></script>
+</body>
+
+</html>
